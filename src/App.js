@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import UserTable from './components/UserTable'
-import {v4 as uuidv4} from 'uuid'
+import UserTable from './components/UserTable';
+import {v4 as uuidv4} from 'uuid';
+import AddUserForm from './components/AddUserForm';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
       <div className='flex-row'>
         <div className='flex-large'>
           <h2>Add users</h2>
+          <AddUserForm addUser={addUser}/>
         </div>
         <div className='flex-arge'>
           <h2>View users</h2>
